@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Button from "./Button";
-import Input from "./Input";
-import heroImage from "../assets/HeroIMG.jpg";
+import Button from "../Button";
+import Input from "../Input";
+import heroImage from "../../assets/HeroIMG.jpg";
 
 function HeroSection() {
   const [email, setEmail] = useState("");
@@ -10,12 +10,11 @@ function HeroSection() {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    widht: "100%",
   };
   return (
-    <header className="relative w-screen h-screen  " style={heroStyles}>
+    <header className="relative w-screen h-full  " style={heroStyles}>
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-95 bg-black/50"></div>{" "}
-      <div className="flex w-[740px]  px-[32px] translate-x-32 translate-y-36  text-gray-200 flex-col-reverse ">
+      <div className="flex w-[740px] h-[420px] px-[32px] translate-x-32 translate-y-36  text-gray-200 flex-col-reverse ">
         <div className="w-full">
           <div className="">
             <div>
