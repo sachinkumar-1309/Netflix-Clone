@@ -30,15 +30,15 @@ export default function Download() {
             fill="url(#paint4_radial_5179_7940)"></path>
           <path
             id="Vector_6"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M39.0849 42.2727L46.3387 35.76L48.8945 38.5142L38.9118 47.477L37.8466 48.4333L36.6071 47.477L24.9899 38.5142L27.0434 35.76L35.4849 42.2727L33.6 21.6016H37.2L39.0849 42.2727Z"
             fill="url(#paint5_radial_5179_7940)"></path>
           <path
             id="Vector_7"
             opacity="0.4"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M61.6566 34.9618C61.7832 35.3893 62.391 35.3233 62.3694 34.878C61.6962 21.1369 50.1509 9.55975 36.5817 9.01957C34.4606 8.93515 32.4155 9.12541 30.4772 9.55909C30.0745 9.64915 30.1575 10.2082 30.5697 10.2246C45.0094 10.7979 57.6246 21.2971 61.6566 34.9618Z"
             fill="url(#paint6_radial_5179_7940)"></path>
         </g>
@@ -50,12 +50,12 @@ export default function Download() {
             r="1"
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(36.0001 36.1837) rotate(-90) scale(34.3829)">
-            <stop offset="0.782019" stop-color="#982DBE"></stop>
+            <stop offset="0.782019" stopColor="#982DBE"></stop>
             <stop
               offset="0.906819"
-              stop-color="#B038DC"
-              stop-opacity="0.2"></stop>
-            <stop offset="1" stop-color="#E4A1FA" stop-opacity="0"></stop>
+              stopColor="#B038DC"
+              stopOpacity="0.2"></stop>
+            <stop offset="1" stopColor="#E4A1FA" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint1_radial_5179_7940"
@@ -63,11 +63,12 @@ export default function Download() {
             cy="0"
             r="1"
             gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(52.9937 20.0992) rotate(135) scale(49.9836)">
-            <stop stop-color="#FFDCCC"></stop>
-            <stop offset="0.333333" stop-color="#FFBDC0"></stop>
-            <stop offset="0.666667" stop-color="#F89DC6"></stop>
-            <stop offset="1" stop-color="#E4A1FA"></stop>
+            gradientTransform="translate(52.9937 20.0992) rotate(135) scale
+            (49.9836)">
+            <stop stopColor="#FFDCCC"></stop>
+            <stop offset="0.333333" stopColor="#FFBDC0"></stop>
+            <stop offset="0.666667" stopColor="#F89DC6"></stop>
+            <stop offset="1" stopColor="#E4A1FA"></stop>
           </radialGradient>
           <radialGradient
             id="paint2_radial_5179_7940"
@@ -76,10 +77,10 @@ export default function Download() {
             r="1"
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(52.7999 19.6937) rotate(135) scale(53.1037)">
-            <stop stop-color="#FFA984"></stop>
-            <stop offset="0.333333" stop-color="#FF787F"></stop>
-            <stop offset="0.666667" stop-color="#F45FA2"></stop>
-            <stop offset="1" stop-color="#C44AF1"></stop>
+            <stop stopColor="#FFA984"></stop>
+            <stop offset="0.333333" stopColor="#FF787F"></stop>
+            <stop offset="0.666667" stopColor="#F45FA2"></stop>
+            <stop offset="1" stopColor="#C44AF1"></stop>
           </radialGradient>
           <radialGradient
             id="paint3_radial_5179_7940"
@@ -88,10 +89,10 @@ export default function Download() {
             r="1"
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(52.9937 20.0992) rotate(135) scale(49.9836)">
-            <stop stop-color="#FFDCCC"></stop>
-            <stop offset="0.333333" stop-color="#FFBDC0"></stop>
-            <stop offset="0.666667" stop-color="#F89DC6"></stop>
-            <stop offset="1" stop-color="#E4A1FA"></stop>
+            <stop stopColor="#FFDCCC"></stop>
+            <stop offset="0.333333" stopColor="#FFBDC0"></stop>
+            <stop offset="0.666667" stopColor="#F89DC6"></stop>
+            <stop offset="1" stopColor="#E4A1FA"></stop>
           </radialGradient>
           <radialGradient
             id="paint4_radial_5179_7940"
@@ -100,8 +101,8 @@ export default function Download() {
             r="1"
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(36.9 39.3) scale(21.3)">
-            <stop stop-color="white"></stop>
-            <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+            <stop stopColor="white"></stop>
+            <stop offset="1" stopColor="white" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="paint5_radial_5179_7940"
@@ -110,9 +111,9 @@ export default function Download() {
             r="1"
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(31.2 32.1016) rotate(39.5226) scale(15.5567)">
-            <stop stop-color="#EF7744"></stop>
-            <stop offset="0.2406" stop-color="#E50914"></stop>
-            <stop offset="1" stop-color="#792A95"></stop>
+            <stop stopColor="#EF7744"></stop>
+            <stop offset="0.2406" stopColor="#E50914"></stop>
+            <stop offset="1" stopColor="#792A95"></stop>
           </radialGradient>
           <radialGradient
             id="paint6_radial_5179_7940"
@@ -121,8 +122,8 @@ export default function Download() {
             r="1"
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(50.7 21.3) rotate(-180) scale(30)">
-            <stop stop-color="white"></stop>
-            <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+            <stop stopColor="white"></stop>
+            <stop offset="1" stopColor="white" stopOpacity="0"></stop>
           </radialGradient>
         </defs>
       </svg>

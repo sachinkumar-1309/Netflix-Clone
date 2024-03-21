@@ -1,4 +1,28 @@
-.container {
-  overflow-x: auto; /* or overflow-x: auto */
-  /* Other styles */
+.contain {
+  overflow: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  background-image: url("assets/HeroIMG.jpg");
+  background-size: max(1100px, 100vw);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+}
+.main1 {
+  background-image: url("assets/AnimalCover.webp");
+  background-size: max(1100px, 100vw);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+}
+.main2 {
+  background-image: url("assets/LoveIsBlind-Banner.webp");
+  background-size: max(1100px, 100vw);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100vw;
 }

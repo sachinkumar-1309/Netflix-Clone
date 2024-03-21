@@ -7,9 +7,3 @@
   margin: 0;
   box-sizing: border-box;
 }
-@tailwind utilities;
-@layer utilities {
-  .gradient-incline {
-    background-color: linear-gradient(90deg, rgb(155, 58, 58), transparent);
-  }
-}
