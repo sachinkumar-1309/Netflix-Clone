@@ -4,7 +4,7 @@ import { MdTranslate } from "react-icons/md";
 
 function Navbar() {
   return (
-    <div className="w-full fixed z-10 flex justify-between px-32 bg-transparent">
+    <div className="w-full absolute z-30 flex justify-between px-32 bg-transparent">
       <div className="">
         <img className="w-40" src="src\assets\Logo.png" alt="Logo" />
       </div>
@@ -29,4 +29,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
