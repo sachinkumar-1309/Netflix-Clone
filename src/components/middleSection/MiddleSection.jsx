@@ -5,11 +5,13 @@ import Smiley from "./Icons/Smiley";
 import "./MiddleSection.css";
 import Telescope from "./Icons/Telescope";
 import Faqs from "../FAQ/Faqs";
+import EmailForm from "../EmailForm/EmailForm";
+import Footer from "../Footer/Footer";
 
 function MiddleSection() {
   return (
     <div className=" relative middle-section h-auto bg-transparent">
-      <section className=" w-screen p-24 bg-black flex justify-center  items-center">
+      <section className=" w-screen p-24 pb-4 bg-black flex justify-center  items-center">
         <div className="w-5/6">
           <div className="text-white block mb-3 text-3xl tracking-tighter font-semiboldbold">
             <h3>More reasons to watch</h3>
@@ -72,9 +74,13 @@ function MiddleSection() {
               </div>
             </div>
           </div>
-          <div className="mt-12">
+          <div className="my-12">
             <Faqs />
           </div>
+          <div className="">
+            <EmailForm id={Date.now()}/>
+          </div>
+          <div></div>
         </div>
       </section>
     </div>
