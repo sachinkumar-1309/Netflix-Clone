@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function FaqList({ data }) {
+function FaqList({data}) {
   const [isReadAble, setIsReadAble] = useState(false);
 
   const toggle = () => {
@@ -9,10 +9,12 @@ function FaqList({ data }) {
   return (
     <div className="w-3/4 text-white">
       <div>
-        <div className="bg-[#2d2d2d] p-6 hover:bg-[#4d4d4d]">
+        <div className="relative bg-[#2d2d2d] p-6 hover:bg-[#4d4d4d]">
           <span className="flex justify-between text-2xl  text-gray-200 font-semibold">
             <h2>{data.question}</h2>
-            <button onClick={toggle} className="">
+            <button
+              onClick={toggle}
+              className="absolute w-full h-full top-0 right-0 flex justify-end items-center pr-6">
               {isReadAble ? (
                 <svg
                   width="36"

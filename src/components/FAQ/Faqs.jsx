@@ -3,6 +3,7 @@ import FaqList from "./FaqList";
 // import FaqList from "./FaqList";
 
 function Faqs() {
+
   const datas = [
     {
       question: "What is Netflix?",
