@@ -4,7 +4,7 @@ import { MdTranslate } from "react-icons/md";
 
 function Navbar() {
   return (
-    <div className="w-full absolute z-30 flex justify-between px-32 bg-transparent">
+    <div className="w-full absolute z-20 flex justify-between px-32 bg-transparent">
       <div className="">
         <img className="w-40" src="src\assets\Logo.png" alt="Logo" />
       </div>
@@ -16,8 +16,12 @@ function Navbar() {
           <select
             className="bg-black/30 px-7 py-1 rounded border  text-end border-white text-white font-bold items-center"
             id="languageSelect">
-            <option value="english">English</option>
-            <option value="हिन्दी">हिन्दी</option>
+            <option className="bg-white text-black " value="english">
+              English
+            </option>
+            <option className="bg-white text-black " value="हिन्दी">
+              हिन्दी
+            </option>
           </select>
         </div>
         <div>

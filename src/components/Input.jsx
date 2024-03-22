@@ -16,7 +16,7 @@ const Input = ({
         type={type}
         value={value}
         id={id}
-        className={`block rounded px-6 pt-4 pb-1 w-full text-md text-white bg-neutral-700 focus:appearance-none focus:outline-none focus:ring-0 peer ${className}`}
+        className={`block rounded px-6 pt-5 pb-3 w-full bg-none text-md text-white bg-neutral-700 focus:appearance-none focus:outline-none focus:ring-0 peer ${className}`}
         placeholder="   "
         autoComplete="on"
       />
