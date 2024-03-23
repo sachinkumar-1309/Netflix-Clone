@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-function FaqList({data}) {
+function FaqList({ data }) {
   const [isReadAble, setIsReadAble] = useState(false);
 
   const toggle = () => {
     setIsReadAble((prev) => !prev);
   };
   return (
-    <div className="w-3/4 text-white">
+    <div className="lg:w-5/6 w-full  text-white">
       <div>
         <div className="relative bg-[#2d2d2d] p-6 hover:bg-[#4d4d4d]">
           <span className="flex justify-between text-2xl  text-gray-200 font-semibold">
