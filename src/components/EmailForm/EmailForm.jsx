@@ -13,8 +13,8 @@ function EmailForm({ id }) {
             membership.
           </h3>
         </div>
-        <div className="flex w-3/4 gap-2 ">
-          <div className="w-4/5">
+        <div className="sm:flex lg:w-3/4 w-full gap-2 pb-3 sm:pb-0">
+          <div className="sm:w-4/5 w-full mb-3">
             <Input
               label="Email address"
               onChange={(e) => setEmail(e.target.value)}
@@ -22,13 +22,16 @@ function EmailForm({ id }) {
               type="email"
               value={email}
               className={
-                " pb-2 bg-neutral-700/40 border-[0.1px] h-full bg-none border-white/45 "
+                " pb-2 bg-neutral-700/40 border-[0.1px]  bg-none border-white/45 "
               }
               classNameLabel={"text-lg top-[8px] tracking-tighter"}
             />
           </div>
-          <div className="w-1/5 object-contain ">
-            <Button className=" h-full w-full text-xl  bg-[rgb(229, 9, 20)]">
+          <div className="sm:w-2/5 w-1/2 md:w  object-contain ">
+            <Button
+              className={
+                "max-h-fit w-full textxl px-2 py-3   bg-[rgb(229, 9, 20)]"
+              }>
               Get Started
             </Button>
           </div>
