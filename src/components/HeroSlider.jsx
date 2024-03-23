@@ -138,7 +138,7 @@ function HeroSlider() {
   return (
     <div className=" backGround w-screen h-screen z-10 ">
       <button
-        className=" text-white absolute bg-black/40 py-12 px-[1px] left-14 top-1/2 rounded-lg cursor-pointer z-20"
+        className=" text-white absolute bg-black/40 py-12 px-[1px] left-2 lg:left-14 md:left-8 top-1/2 rounded-lg cursor-pointer z-20"
         onClick={prevHandler}>
         <svg
           width="24"
@@ -159,7 +159,7 @@ function HeroSlider() {
         </svg>
       </button>
       <button
-        className="text-white absolute bg-black/40 px-[1px] right-14 top-1/2 rounded-lg py-12 cursor-pointer z-20"
+        className="text-white absolute bg-black/40 px-[1px] right-2 lg:right-14 md:right-8 top-1/2 rounded-lg py-12 cursor-pointer z-20"
         onClick={nextHandler}>
         <svg
           width="24"

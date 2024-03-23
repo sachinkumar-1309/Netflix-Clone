@@ -14,91 +14,89 @@ function HeroSection1() {
     height: "100vh", // Set height to full screen height
   };
   return (
-    <div className="relative w-screen " style={heroStyles}>
+    <div className="relative w-screen text-white" style={heroStyles}>
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent "></div>{" "}
-      <div className="flex w-[740px] h-[452px] px-[32px] translate-x-32 translate-y-36 text-gray-200 flex-col-reverse ">
-        <div className="w-full">
-          <div className="w-1/2"></div>
-          <div className="5/6">
-            <div>
-              <button className="bg-black/45 px-4 py-2 font-semibold rounded-full flex justify-center items-center gap-1 mb-4">
-                <HiFire className="text-orange-500 text-xl" />
-                Trending now
-              </button>
-            </div>
-            <div className="w-[254px] h-[175]">
-              {/* <h1 className="-tracking-tight text-5xl font-extrabold mb-6">
-                Unlimited movies, TV shows and more
-              </h1> */}
-              <img
-                className="text-xl"
-                width="250"
-                height="140"
-                src="src\assets\animalPNG.webp"
-                alt="Cover"
-              />
-            </div>
-            <div className="flex gap-2 mt-4 mb-4">
-              <div className="bg-gray-600 px-1.5 py-2 pb rounded w- inline-block ">
-                <span className="h-4 text-sm font-bold flex justify-between items-center">
-                  {" "}
-                  2023
-                </span>
+      <div className="relative bg-transparent w-[80vw] h-full m-auto pb-14 flex ">
+        <div className="my-auto">
+          <div className="w-full mx-auto absolute bottom-0 pb-14 lg:pb-0 lg:-bottom-2 xl:pb-14 xl:">
+            <div className="lg:w-1/2">
+              <div className="sm:w-1/3">
+                <button className="bg-black/45 px-4 py-3 font-semibold  rounded-full flex justify-center items-center gap-1 mb-4">
+                  <HiFire className="text-orange-500 text-xl" />
+                  Trending now
+                </button>
               </div>
-              <div className="bg-gray-600 px-1.5 py-2 rounded w- inline-block ">
-                <span className="h-4 text-sm font-bold flex justify-between items-center">
-                  {" "}
-                  A
-                </span>
+              <div className="w-1/2 sm:w-1/3 lg:w-3/5">
+                <img
+                  className="text-xl"
+                  src="src\assets\animalPNG.webp"
+                  alt="Cover"
+                />
               </div>
-              <div className="bg-gray-600 px-1.5 py-2 rounded w- inline-block ">
-                <span className="h-4 text-sm font-bold flex justify-between items-center">
-                  {" "}
-                  Movie
-                </span>
-              </div>
-              <div className="bg-gray-600 px-1.5 py-2 rounded w- inline-block ">
-                <span className="h-3 text-sm font-bold flex justify-between items-center">
-                  {" "}
-                  Action
-                </span>
-              </div>
-            </div>
-            <div className="w-4/5">
-              <p className="text-sm mb-6">
-                The hardened son of a powerful industrialist returns home after
-                years abroad and vows to take bloody revenge on those
-                threatening his father's life..{" "}
-              </p>
-            </div>
-          </div>
-          <div className="flex ">
-            <form>
-              <div>
-                <h3 className="text-lg mb-4 ">
-                  Ready to watch? Enter your email to create or restart your
-                  membership.
-                </h3>
-              </div>
-              <div className="flex w-full gap-2">
-                <div className="w-3/5">
-                  <Input
-                    label="Email address"
-                    onChange={(e) => setEmail(e.target.value)}
-                    id="email"
-                    type="email"
-                    value={email}
-                    className={" pb-2 bg-neutral-700/40 border border-white "}
-                    classNameLabel={"text-lg top-[8px] tracking-tighter"}
-                  />
+              <div className="flex gap-2 mt-4 mb-4">
+                <div className="bg-gray-600 px-1.5 py-2 pb rounded w- inline-block ">
+                  <span className="h-4 text-sm font-bold flex justify-between items-center">
+                    {" "}
+                    2023
+                  </span>
                 </div>
-                <div className="w-2/5 object-contain ">
-                  <Button className=" h-full w-full text-xl  bg-[rgb(229, 9, 20)]">
-                    Get Started
-                  </Button>
+                <div className="bg-gray-600 px-1.5 py-2 rounded w- inline-block ">
+                  <span className="h-4 text-sm font-bold flex justify-between items-center">
+                    {" "}
+                    A
+                  </span>
+                </div>
+                <div className="bg-gray-600 px-1.5 py-2 rounded w- inline-block ">
+                  <span className="h-4 text-sm font-bold flex justify-between items-center">
+                    {" "}
+                    Movie
+                  </span>
+                </div>
+                <div className="bg-gray-600 px-1.5 py-2 rounded w- inline-block ">
+                  <span className="h-3 text-sm font-bold flex justify-between items-center">
+                    {" "}
+                    Action
+                  </span>
                 </div>
               </div>
-            </form>
+              <div className="">
+                <p className="text-lg mb-6 lg:block hidden">
+                  The hardened son of a powerful industrialist returns home
+                  after years abroad and vows to take bloody revenge on those
+                  threatening his father's life..{" "}
+                </p>
+              </div>
+            </div>
+            <div className="flex w-full md:w-3/4 lg:w-3/5 xl:w-2/3">
+              <form className="w-full">
+                <div>
+                  <h3 className="text-base sm:text-lg  mb-4 leading-tight">
+                    Ready to watch? Enter your email to create or restart your
+                    membership.
+                  </h3>
+                </div>
+                <div className="sm:flex w-full gap-2">
+                  <div className="sm:w-3/5  w-full ">
+                    <Input
+                      label="Email address"
+                      onChange={(e) => setEmail(e.target.value)}
+                      id="email"
+                      type="email"
+                      value={email}
+                      className={
+                        " pb-0 sm:pb-2 mb-3 bg-neutral-700/40 border border-white "
+                      }
+                      classNameLabel={"text-lg top-[8px] tracking-tighter"}
+                    />
+                  </div>
+                  <div className="sm:w-2/5 w-2/3 object-contain pb-2">
+                    <Button className=" sm:h-full h sm:w-full w-fit text-xl  bg-[rgb(229, 9, 20)]">
+                      Get Started
+                    </Button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
