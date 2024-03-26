@@ -1,4 +1,4 @@
-.inner-div {
+/* .inner-div {
   position: absolute;
   margin: auto;
   height: 100%;
@@ -17,12 +17,16 @@
     ),
     black;
   background-clip: border-box;
-}
+} */
 .inner-div {
   box-sizing: border-box;
   position: absolute;
   height: 100%;
-  top: 0;
+  /* z-index: ; */
+  width: 180%;
+  left: -40%;
+  top: 1px;
+  /* z-index: 11; */
   margin: auto;
   /* display: -webkit-box; */
   /* display: -webkit-flex; */
@@ -48,7 +52,7 @@
 .inner-div::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
   bottom: 0;
   left: 0;
