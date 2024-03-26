@@ -22,16 +22,13 @@ function EmailForm({ id }) {
               type="email"
               value={email}
               className={
-                " pb-2 bg-neutral-700/40 border-[0.1px]  bg-none border-white/45 "
+                " pb- bg-neutral-700/40 border-[0.1px]  bg-none border-white/45 "
               }
               classNameLabel={"text-lg top-[8px] tracking-tighter"}
             />
           </div>
           <div className="sm:w-2/5 w-1/2 md:w  object-contain ">
-            <Button
-              className={
-                "max-h-fit w-full textxl px-2 py-3   bg-[rgb(229, 9, 20)]"
-              }>
+            <Button className={"w-full text-xl px-2 py-3 bg-[rgb(229, 9, 20)]"}>
               Get Started
             </Button>
           </div>
