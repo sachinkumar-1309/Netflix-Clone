@@ -10,14 +10,16 @@ function HeroSection() {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
+    height: "105vh",
   };
+  
   return (
     <header
-      className="relative w-screen h-full text-white z-5 flex"
+      className="relative w-screen h-full text-white flex z-[]"
       style={heroStyles}>
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-95 bg-black/50"></div>{" "}
-      <div className="relative bg-transparent w-[80vw] h-full m-auto pb-14 flex ">
-        <div className="my-auto">
+      <div className="relative bg-transparent w-[80vw] h-5/6 min-[425px]:h-full m-auto pb-14 flex ">
+        <div className="">
           <div className="w-full mx-auto absolute bottom-0 pb-14">
             <div className="w-full md:w-2/3 lg:w-1/2">
               <div>
@@ -53,8 +55,10 @@ function HeroSection() {
                       classNameLabel={"text-lg top-[8px] tracking-tighter"}
                     />
                   </div>
-                  <div className="sm:w-2/5 w-2/3 object-contain pb-2">
-                    <Button className=" sm:h-full h sm:w-full w-fit text-xl  bg-[rgb(229, 9, 20)]">
+                  <div className="sm:w-2/5 w-1/2 object-contain">
+                    <Button
+                      id="heroBtn"
+                      className=" w-full text-xl px-2 py-3 bg-[rgb(229, 9, 20)]">
                       Get Started
                     </Button>
                   </div>

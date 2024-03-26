@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "../Button";
 import Input from "../Input";
-import heroImage from "../../assets/LoveIsBlind-Banner.webp";
+import heroImage from "../../assets/LoveIsBlindBanner.webp";
 import { HiFire } from "react-icons/hi";
 
 function HeroSection2() {
@@ -9,15 +9,15 @@ function HeroSection2() {
   const heroStyles = {
     backgroundImage: `url(${heroImage})`,
     backgroundRepeat: "no-repeat",
-    backgroundSize: "max(1200px , 100vw)",
+    backgroundSize: "cover",
     backgroundPosition: "center",
 
-    height: "100vh", // Set height to full screen height
+    height: "105vh", // Set height to full screen height
   };
   return (
-    <div className="relative w-screen h-screen text-white">
+    <div className="relative w-screen h-full text-white flex" style={heroStyles}>
       <div className="absolute inset-0 opacity-100 bg-black/70"></div>{" "}
-      <div className="relative bg-transparent w-[80vw] h-full m-auto pb-14 flex ">
+      <div className="relative bg-transparent w-[80vw] h-5/6 min-[425px]:h-full m-auto">
         <div className="my-auto">
           <div className="w-full mx-auto absolute bottom-0 pb-14">
             <div className="lg:w-2/3 xl:w-1/2">
@@ -28,11 +28,7 @@ function HeroSection2() {
                 </button>
               </div>
               <div className="w-1/2 sm:w-1/3 lg:w-2/3 xl:">
-                <img
-                  className=""
-                  src="src\assets\LoveIsBlind.webp"
-                  alt="Cover"
-                />
+                <img className="" src="src\assets\Hero3.png" alt="Cover" />
               </div>
               <div className="flex gap-2 mt-4 mb-4">
                 <div className="bg-gray-600 px-1.5 py-2 pb rounded w- inline-block ">
@@ -90,8 +86,10 @@ function HeroSection2() {
                       classNameLabel={"text-lg top-[8px] tracking-tighter"}
                     />
                   </div>
-                  <div className="sm:w-2/5 w-2/3 object-contain pb-2">
-                    <Button className=" sm:h-full h sm:w-full w-fit text-xl  bg-[rgb(229, 9, 20)]">
+                  <div className="sm:w-2/5 w-1/2 object-contain">
+                    <Button
+                      id="heroBtn"
+                      className="w-full text-xl px-2 py-3 bg-[rgb(229, 9, 20)]">
                       Get Started
                     </Button>
                   </div>

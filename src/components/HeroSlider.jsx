@@ -1,145 +1,32 @@
-// import React, { useRef } from "react";
-
-// import HeroSection from "./HeroSection";
-// import HeroSection1 from "./HeroSection1";
-// import HeroSection2 from "./HeroSection2";
-
-// function HeroSlider() {
-//   const boxRef = useRef(null);
-
-//   const prevHandler = () => {
-//     if (boxRef.current) {
-//       let width = boxRef.current.clientWidth;
-//       console.log("Before prev scroll", boxRef.current.scrollLeft);
-//       boxRef.current.scrollLeft = boxRef.current.scrollLeft - width;
-//       console.log("After prev scroll", boxRef.current.scrollLeft);
-//     }
-//   };
-
-//   const nextHandler = () => {
-//     if (boxRef.current) {
-//       let width = boxRef.current.clientWidth;
-//       console.log("Before next scroll", boxRef.current.scrollLeft);
-//       boxRef.current.scrollLeft = boxRef.current.scrollLeft + width;
-//       console.log("After next scroll", boxRef.current.scrollLeft);
-//     }
-//   };
-
-//   return (
-//     <div className="relative backGround w-screen h-screen ">
-//       <div className="flex justify-center items-center absolute z-10 w-full h-full">
-//         <button
-//           className="absolute text-white top-1/2 left-12 p-3  cursor-pointer z-20"
-//           onClick={prevHandler}>
-//           <svg
-//             width="24"
-//             height="24"
-//             viewBox="0 0 24 24"
-//             fill="none"
-//             xmlns="http://www.w3.org/2000/svg"
-//             data-mirrorinrtl="true"
-//             className="default-ltr-cache-4z3qvp e1svuwfo1"
-//             data-name="ChevronLeft"
-//             aria-labelledby=":R2iqlql9:"
-//             aria-hidden="true">
-//             <path
-//               fillRule="evenodd"
-//               clipRule="evenodd"
-//               d="M8.41409 12L15.707 19.2928L14.2928 20.7071L6.29277 12.7071C6.10523 12.5195 5.99988 12.2652 5.99988 12C5.99988 11.7347 6.10523 11.4804 6.29277 11.2928L14.2928 3.29285L15.707 4.70706L8.41409 12Z"
-//               fill="currentColor"></path>
-//           </svg>
-//         </button>
-//         <button
-//           className="absolute text-white p-3 top-1/2 right-12 cursor-pointer z-20"
-//           onClick={nextHandler}>
-//           <svg
-//             width="24"
-//             height="24"
-//             viewBox="0 0 24 24"
-//             fill="none"
-//             xmlns="http://www.w3.org/2000/svg"
-//             data-mirrorinrtl="true"
-//             className="default-ltr-cache-4z3qvp e1svuwfo1"
-//             data-name="ChevronRight"
-//             aria-labelledby=":R2kqlql9:"
-//             aria-hidden="true">
-//             <path
-//               fillRule="evenodd"
-//               clipRule="evenodd"
-//               d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
-//               fill="currentColor"></path>
-//           </svg>
-//         </button>
-//       </div>
-//       <div ref={boxRef} className="w-full h-full flex  overflow-x-scroll">
-//         <div className="main w-full h-full ">
-//           <HeroSection />
-//         </div>
-//         <div className="main1 w-full h-full">
-//           <HeroSection1 />
-//         </div>
-//         <div className="main2 w-full h-full">
-//           <HeroSection2 />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default HeroSlider;
-
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import debounce from "lodash/debounce"; // Import debounce function from lodash
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import CurveDiv from "./CurveDiv";
 
 import HeroSection from "./HeroSection/HeroSection";
 import HeroSection1 from "./HeroSection/HeroSection1";
 import HeroSection2 from "./HeroSection/HeroSection2";
+import Slider from "react-slick";
 
 function HeroSlider() {
-  const boxRef = useRef(null);
+  const slider = React.useRef(null);
 
-  // Debounced scroll event handler
-  const handleScroll = debounce(() => {
-    console.log("Scrolling");
-    // Your scroll logic here
-  }, 100); // Adjust debounce delay as needed (e.g., 100 milliseconds)
-
-  // Attach scroll event listener to the container element
-  useEffect(() => {
-    const container = boxRef.current;
-    if (container) {
-      container.addEventListener("scroll", handleScroll);
-      return () => {
-        container.removeEventListener("scroll", handleScroll);
-      };
-    }
-  }, [handleScroll]);
-
-  const prevHandler = () => {
-    if (boxRef.current) {
-      let width = boxRef.current.clientWidth;
-      console.log("Before prev scroll", boxRef.current.scrollLeft);
-      boxRef.current.scrollLeft = boxRef.current.scrollLeft - width;
-      console.log("After prev scroll", boxRef.current.scrollLeft);
-    }
-  };
-
-  const nextHandler = () => {
-    if (boxRef.current) {
-      let width = boxRef.current.clientWidth;
-      console.log("Before next scroll", boxRef.current.scrollLeft);
-      boxRef.current.scrollLeft = boxRef.current.scrollLeft + width;
-      console.log("After next scroll", boxRef.current.scrollLeft);
-    }
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (
-    <div className=" backGround w-screen h-screen z-10 ">
+    <div className="relative backGround w-screen h-full z-10 pb-">
       <button
-        className=" text-white absolute bg-black/40 py-12 px-[1px] left-2 lg:left-14 md:left-8 top-1/2 rounded-lg cursor-pointer z-20"
-        onClick={prevHandler}>
+        className=" text-white absolute bg-black/40 py-12 px-[1px] left-2 lg:left-14 md:left-8 top-[calc(50%-100px)] rounded-lg cursor-pointer z-20"
+        onClick={() => slider?.current?.slickPrev()}>
         <svg
           width="24"
           height="24"
@@ -159,8 +46,8 @@ function HeroSlider() {
         </svg>
       </button>
       <button
-        className="text-white absolute bg-black/40 px-[1px] right-2 lg:right-14 md:right-8 top-1/2 rounded-lg py-12 cursor-pointer z-20"
-        onClick={nextHandler}>
+        className="text-white absolute bg-black/40 px-[1px] right-2 lg:right-14 md:right-8 top-[calc(50%-100px)] rounded-lg py-12 cursor-pointer z-20"
+        onClick={() => slider?.current?.slickNext()}>
         <svg
           width="24"
           height="24"
@@ -179,23 +66,25 @@ function HeroSlider() {
             fill="currentColor"></path>
         </svg>
       </button>
-      <div
-        ref={boxRef}
-        className="w-full h-full flex contain overflow-x-hidden z-[21]">
-        <div className="main w-full h-full ">
+      {/* <div ref={boxRef} className="w-full flex "> */}
+      <Slider ref={slider} {...settings}>
+        <div className="main w-full ">
           <HeroSection />
         </div>
-        <div className="main1 w-full h-full">
+        <div className="main1 w-full ">
           <HeroSection1 />
         </div>
-        <div className="main2 w-full h-full">
+        <div className="main2 w-full">
           <HeroSection2 />
         </div>
-      </div>
-      <div className=" absolute h-[100px] w-full ">
+      </Slider>
+
+      <div className="absolute z-10 w-full h-[100px] -bottom-[calc(108vh-100vh)]">
+        f
         <CurveDiv />
       </div>
     </div>
+    // </div>
   );
 }
 
