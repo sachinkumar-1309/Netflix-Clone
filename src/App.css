@@ -1,11 +1,21 @@
-.contain {
-  overflow: hidden;
-}
 body {
   overflow-x: hidden;
 }
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+.slick-dots {
+  z-index: 5;
+}
+.slick-dots li {
+  width: 40px;
+}
+.slick-dots li button {
+  font-size: 100px !important;
+}
 
-.main {
+/* .main {
   background-image: url("assets/HeroIMG.jpg");
   background-size: max(1100px, 100vw);
   background-position: center;
@@ -25,4 +35,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-width: 100vw;
-}
+} */

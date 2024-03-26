@@ -10,8 +10,8 @@ import Footer from "../Footer/Footer";
 
 function MiddleSection() {
   return (
-    <div className=" relative middle-section h-auto  bg-transparent">
-      <section className=" w-screen lg:p-24 lg:pb-20 md:pb-16 sm:pb-12 p-3 pb-4 bg-black flex justify-center items-center">
+    <div className=" relative middle-section h-auto bg-transparent pt-4 sm:pt-0">
+      <section className=" w-screen lg:p-20 lg:pb-20 md:pb-16 sm:pb-12 p-3 pb-4 bg-black flex justify-center items-center">
         <div className="xl:w-fit top-2 z-40">
           <div className="text-white block mb-3 text-3xl tracking-tighter font-semiboldbold">
             <h3>More reasons to watch</h3>
