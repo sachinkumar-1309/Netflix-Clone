@@ -4,6 +4,8 @@ import Input from "../Input";
 import heroImage from "../../assets/LoveIsBlindBanner.webp";
 import { HiFire } from "react-icons/hi";
 
+import HeroPNG from "../../assets/Hero3.png";
+
 function HeroSection2() {
   const [email, setEmail] = useState("");
   const heroStyles = {
@@ -28,7 +30,7 @@ function HeroSection2() {
                 </button>
               </div>
               <div className="w-1/2 sm:w-1/3 lg:w-2/3 xl:">
-                <img className="" src="src\assets\Hero3.png" alt="Cover" />
+                <img src={HeroPNG} alt="Cover" />
               </div>
               <div className="flex gap-2 mt-4 mb-4">
                 <div className="bg-gray-600 px-1.5 py-2 pb rounded w- inline-block ">

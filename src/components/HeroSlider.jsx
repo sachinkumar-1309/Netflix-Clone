@@ -18,14 +18,18 @@ function HeroSlider() {
     dots: true,
     infinite: true,
     speed: 500,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 4000,
   };
 
   return (
     <div className="relative backGround w-screen h-full z-10 pb-">
       <button
-        className=" text-white absolute bg-black/40 py-12 px-[1px] left-2 lg:left-14 md:left-8 top-[calc(50%-100px)] rounded-lg cursor-pointer z-20"
+        className=" text-white absolute bg-black/40 py-7 sm:py-12 px-[1px] left-0 lg:left-14 md:left-8 top-[calc(50%-100px)] rounded-lg cursor-pointer z-20"
         onClick={() => slider?.current?.slickPrev()}>
         <svg
           width="24"
@@ -46,7 +50,7 @@ function HeroSlider() {
         </svg>
       </button>
       <button
-        className="text-white absolute bg-black/40 px-[1px] right-2 lg:right-14 md:right-8 top-[calc(50%-100px)] rounded-lg py-12 cursor-pointer z-20"
+        className="text-white absolute bg-black/40 px-[1px] right-0 lg:right-14 md:right-8 top-[calc(50%-100px)] rounded-lg py-7 sm:py-12 cursor-pointer z-20"
         onClick={() => slider?.current?.slickNext()}>
         <svg
           width="24"
@@ -79,8 +83,7 @@ function HeroSlider() {
         </div>
       </Slider>
 
-      <div className="absolute z-10 w-full h-[100px] -bottom-[calc(108vh-100vh)]">
-        f
+      <div className="absolute z-10 w-full h-[100px] -bottom-[calc(108vh-100vh)] overflow-hidden">
         <CurveDiv />
       </div>
     </div>
