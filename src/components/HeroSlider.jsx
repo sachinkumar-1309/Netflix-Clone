@@ -21,7 +21,7 @@ function HeroSlider() {
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     speed: 500,
     autoplaySpeed: 4000,
   };

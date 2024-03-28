@@ -1,8 +1,13 @@
 import React from "react";
 import Button from "./Button";
 import { MdTranslate } from "react-icons/md";
+import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function Navbar() {
+  const { t } = useTranslation();
+  const { sign_in } = t("navbar");
   return (
     <div className="w-full absolute h-[80px] z-20 flex justify-between items-center px-3 sm:px-10 md:px-20 bg-transparent ">
       <div className="w- h-10 flex justify-center items-center ">
@@ -10,7 +15,7 @@ function Navbar() {
           viewBox="0 0 111 30"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
           aria-hidden="true"
           role="img"
           className="default-ltr-cache-1d568uk ev1dnif2 fill-red-600 w-[5.6rem] sm:w-28 sm:h-7 h-[1.5rem]">
@@ -24,7 +29,7 @@ function Navbar() {
           <i className="text-white text-md absolute bottom-2 left-2">
             <MdTranslate />
           </i>
-          <select
+          {/* <select
             className="bg-black/30 px-6 py-1 rounded border w-[0vw] sm:w-[120px] text-end border-white text-white font-bold items-center"
             id="languageSelect">
             <option className="bg-white text-black z-10" value="english">
@@ -33,11 +38,15 @@ function Navbar() {
             <option className="bg-white text-black " value="हिन्दी">
               हिन्दी
             </option>
-          </select>
+          </select> */}
+          
+            <LanguageSelector />
         </div>
-        <div>
-          <Button children={"Sign in"} id="navBtn" className="text-md " />
-        </div>
+        <Link to="/login">
+          <Button id="navBtn" className="text-md ">
+            {sign_in}
+          </Button>
+        </Link>
       </div>
     </div>
   );

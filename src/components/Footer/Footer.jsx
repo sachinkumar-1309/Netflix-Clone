@@ -1,13 +1,38 @@
+import { useTranslation } from "react-i18next";
 import React from "react";
 import { MdTranslate } from "react-icons/md";
+import LanguageSelector from "../LanguageSelector";
+
 
 function Footer() {
+  const { t } = useTranslation();
+  const {
+    questions,
+    call,
+    help_center,
+    account,
+    media_center,
+    investor_return,
+    jobs,
+    ways_to_watch,
+    terms_of_use,
+    privacy,
+    cookie_preferences,
+    corporate_information,
+    contact_us,
+    speed_test,
+    legal_notice,
+    only_on_netflix,
+    netflix_india,
+  } = t("footer");
   return (
     <footer className="bg-black w-screen relative text-[#ffffffb3] flex justify-center items-center px-3 sm:px-10 sm:pb-20 pb-16 ">
       <div className="sm:w-11/12 w-full p-5 pl-9 pt-3 sm:pt-0 ">
         <div>
           <span>
-            Questions? Call{" "}
+            {/* Questions? Call{" "}
+             */}
+            {questions} {call}{" "}
             <a className="underline" href="">
               XXX-XXX-XXXX
             </a>
@@ -15,69 +40,55 @@ function Footer() {
         </div>
         <ul className="flex flex-wrap sm:mt-10 mt-6 w-full h underline font-semibold">
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">FAQ</a>
+            <a href="https://help.netflix.com/en/node/412">FAQ</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Help Centre</a>
+            <a href="">{help_center}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Account</a>
+            <a href="">{account}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Media Centre</a>
+            <a href="">{media_center}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Investor Return</a>
+            <a href="">{investor_return}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Jobs</a>
+            <a href="">{jobs}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Ways to Watch</a>
+            <a href="">{ways_to_watch}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Terms of Use</a>
+            <a href="">{terms_of_use}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Privacy</a>
+            <a href="">{privacy}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Cookie Preferences</a>
+            <a href="">{cookie_preferences}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Coporate Information</a>
+            <a href="">{corporate_information}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Contact Us</a>
+            <a href="">{contact_us}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Speed Test</a>
+            <a href="">{speed_test}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Legal Notice</a>
+            <a href="">{legal_notice}</a>
           </li>
           <li className="mt-3 md:w-1/4 sm:w-1/2 w-full ">
-            <a href="">Only on Netflix</a>
+            <a href="">{only_on_netflix}</a>
           </li>
         </ul>
-        <div>
-          <div className="relative mt-14">
-            <i className="text-white text-md absolute bottom-2 left-2">
-              <MdTranslate />
-            </i>
-            <select
-              className="bg-black/30 px-7 py-1 rounded border text-end border-[#ffffffb3] text-white font-bold items-center"
-              id="languageSelect">
-              <option className="bg-white text-black " value="english">
-                English
-              </option>
-              <option className="bg-white text-black " value="हिन्दी">
-                हिन्दी
-              </option>
-            </select>
-          </div>
+        <div className="mt-12">
+          <LanguageSelector />
         </div>
-        <p className="mt-12">Netflix India</p>
+        <p className="mt-12">{netflix_india}</p>
       </div>
     </footer>
   );

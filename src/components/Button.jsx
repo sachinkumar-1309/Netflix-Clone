@@ -2,7 +2,7 @@ import React from "react";
 
 function Button({
   type = "submit",
-  bgColor = "bg-red-600",
+  bgColor = "bg-[#e50914]",
   textColor = "text-white",
   children,
   className = "",
@@ -15,7 +15,7 @@ function Button({
         id={id}
         type={type}
         {...props}
-        className={`bg-red-600 px-2 py-1 hover:bg-red-700 rounded font-bold cursor-pointer ${textColor} ${className} ${bgColor} `}>
+        className={`bg-[rgb(229, 9, 20)] px-2 py-1 hover:bg-red-700 rounded font-bold cursor-pointer ${textColor} ${className} ${bgColor} `}>
         {children}
       </button>
     </div>

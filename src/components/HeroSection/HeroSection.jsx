@@ -2,8 +2,14 @@ import React, { useState, useEffect } from "react";
 import Button from "../Button";
 import Input from "../Input";
 import heroImage from "../../assets/HeroIMG.jpg";
+import { useTranslation } from "react-i18next";
+
+// import LanguageSelector from "./components/LanguageDetector";
 
 function HeroSection() {
+  const { t } = useTranslation();
+  const { title, subtitle, cta, emailLabel, buttonText } = t("heroSection");
+
   const [email, setEmail] = useState("");
   const heroStyles = {
     backgroundImage: `url(${heroImage})`,
@@ -12,7 +18,7 @@ function HeroSection() {
     backgroundPosition: "center",
     height: "105vh",
   };
-  
+
   return (
     <header
       className="relative w-screen h-full text-white flex z-[]"
@@ -23,28 +29,32 @@ function HeroSection() {
           <div className="w-full mx-auto absolute bottom-0 pb-14">
             <div className="w-full md:w-2/3 lg:w-1/2">
               <div>
-                <h1 className="sm:leading-snug xl:text-6xl text-3xl lg:text-5xl font-extrabold mb-1.5 sm:mb-6  md:mb-1">
-                  Unlimited movies, TV shows and more
+                <h1 className="sm:leading-snugP xl:pb-7 xl:text-6xl text-3xl lg:text-5xl font-extrabold mb-1.5 sm:mb-6  md:mb-1">
+                  {/* Unlimited movies, TV shows and more */}
+                  {title}
                 </h1>
               </div>
               <div>
-                <p className="sm:text-xl text-base font-bold mb-2 sm:mb-6 md:mb-4">
-                  Starts at ₹149. Cancel anytime.{" "}
+                <p className="sm:text-xl text-base xl:pb-7 font-bold mb-2 sm:mb-6 md:mb-4">
+                  {/* Starts at ₹149. Cancel anytime.{" "} */}
+                  {subtitle}
                 </p>
               </div>
             </div>
-            <div className="flex w-full md:w-3/4 lg:w-3/5 xl:w-2/3">
+            <div className="flex w-full md:w-3/4 lg:w-3/5 xl:w-1/2">
               <form className="w-full">
                 <div>
                   <h3 className="text-base sm:text-lg  mb-4 leading-tight">
-                    Ready to watch? Enter your email to create or restart your
-                    membership.
+                    {/* Ready to watch? Enter your email to create or restart your
+                    membership. */}
+                    {cta}
                   </h3>
                 </div>
                 <div className="sm:flex w-full gap-2">
                   <div className="sm:w-3/5 w-full ">
                     <Input
-                      label="Email address"
+                      // abel="Email address"
+                      label={emailLabel}
                       onChange={(e) => setEmail(e.target.value)}
                       id="email"
                       type="email"
@@ -59,7 +69,8 @@ function HeroSection() {
                     <Button
                       id="heroBtn"
                       className=" w-full text-xl px-2 py-3 bg-[rgb(229, 9, 20)]">
-                      Get Started
+                      {/* Get Started */}
+                      {buttonText}
                     </Button>
                   </div>
                 </div>

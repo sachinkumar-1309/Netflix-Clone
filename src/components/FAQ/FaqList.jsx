@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 
 function FaqList({ data }) {
+  const { t } = useTranslation();
+  const{}=t("faqs.questions")
   const [isReadAble, setIsReadAble] = useState(false);
 
   const toggle = () => {
