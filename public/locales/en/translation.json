@@ -1,0 +1,118 @@
+{
+  "navbar": {
+    "sign_in": "Sign In"
+  },
+  "heroSection": {
+    "title": "Unlimited movies, TV shows and more",
+    "subtitle": "Starts at ₹149. Cancel anytime.",
+    "cta": "Ready to watch? Enter your email to create or restart your membership.",
+    "emailLabel": "Email address",
+    "buttonText": "Get Started"
+  },
+  "heroSection1": {
+    "trendingNow": "Trending now",
+    "year": "2023",
+    "A": "A",
+    "genre": "Action",
+    "readyToWatch": "Ready to watch? Enter your email to create or restart your membership.",
+    "emailLabel": "Email address",
+    "buttonText": "Get Started",
+    "movie": "Movie",
+    "description": "The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life."
+  },
+  "heroSection2": {
+    "trendingNow": "Trending now",
+    "year": "2024",
+    "genre": "Reality programming",
+    "readyToWatch": "Ready to watch? Enter your email to create or restart your membership.",
+    "emailLabel": "Email address",
+    "buttonText": "Get Started",
+    "show": "Show",
+    "A": "A",
+    "description": "Nick and Vanessa Lachey host this social experiment where single men and women look for love and get engaged, all before meeting in person."
+  },
+  "emailSection": {
+    "readyToWatch": "Ready to watch? Enter your email to create or restart your membership.",
+    "emailLabel": "Email address",
+    "buttonText": "Get Started"
+  },
+
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "id": "what_is_netflix",
+        "question": "What is Netflix?",
+        "paragraph1": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.",
+        "paragraph2": "You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!"
+      },
+      {
+        "question": "How much Netflix costs?",
+        "paragraph1": "Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from (your currency) to (your currency) a month. No extra costs, no contracts.",
+        "paragraph2": ""
+      },
+      {
+        "question": "Where can I watch?",
+        "paragraph1": "Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.",
+        "paragraph2": "You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere."
+      },
+      {
+        "question": "How do I cancel?",
+        "paragraph1": "Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.",
+        "paragraph2": ""
+      },
+      {
+        "question": "What can I watch on Netflix?",
+        "paragraph1": "Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.",
+        "paragraph2": ""
+      },
+      {
+        "question": "Is Netflix good for kids?",
+        "paragraph1": "The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.",
+        "paragraph2": "Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see."
+      }
+    ]
+  },
+  "middleSection": {
+    "moreReasons": "More reasons to watch",
+    "enjoyOnTV": {
+      "title": "Enjoy on your TV",
+      "description": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."
+    },
+    "downloadShows": {
+      "title2": "Download your shows to watch offline",
+      "description2": "Save your favorites easily and always have something to watch."
+    },
+    "watchEverywhere": {
+      "title3": "Watch everywhere",
+      "description3": "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
+    },
+    "createProfiles": {
+      "title4": "Create profiles for kids",
+      "description4": "Send kids on adventures with their favorite characters in a space made just for them — free with your membership."
+    }
+  },
+  "footer": {
+    "questions": "Questions?",
+    "call": "Call",
+    "faq": "FAQ",
+    "help_center": "Help Centre",
+    "account": "Account",
+    "media_center": "Media Centre",
+    "investor_return": "Investor Return",
+    "jobs": "Jobs",
+    "ways_to_watch": "Ways to Watch",
+    "terms_of_use": "Terms of Use",
+    "privacy": "Privacy",
+    "cookie_preferences": "Cookie Preferences",
+    "corporate_information": "Corporate Information",
+    "contact_us": "Contact Us",
+    "speed_test": "Speed Test",
+    "legal_notice": "Legal Notice",
+    "only_on_netflix": "Only on Netflix",
+    "select_language": "Select Language",
+    "english": "English",
+    "hindi": "Hindi",
+    "netflix_india": "Netflix India"
+  }
+}
