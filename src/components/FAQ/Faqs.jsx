@@ -57,7 +57,6 @@ function Faqs() {
         {/* Frequently Asked Questions */}
         {title}
       </h2>
-      {console.log(questions)}
       {questions &&
         questions.map((data) => (
           <li key={data.question} className="w-full mb-2">
