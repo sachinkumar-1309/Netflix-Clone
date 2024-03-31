@@ -114,5 +114,32 @@
     "english": "English",
     "hindi": "Hindi",
     "netflix_india": "Netflix India"
+  },
+  "signin_page": {
+    "sign_in": "Sign In",
+    "Email": "Email or phone number",
+    "Password": "Password",
+    "or": "OR",
+    "sign_in_code": "Use a sign-in code",
+    "forget": "Forget password ?",
+    "remember": "Remember me",
+    "new_to_netflix": "New to Netflix ?",
+    "sign_up": "Sign up now",
+    "questions": "Questions?",
+    "use_password": "Use password",
+    "send_sign_in_code": "Send sign in code",
+    "message": "Message and data rates may apply"
+  },
+  "forgetPassword": {
+    "sign_in": "Sign In",
+    "title": "Forgot Email/Password ",
+    "description": "How would you like to reset your password?",
+    "email": "Email",
+    "text": "Text message (SMS)",
+    "instructionEmail": "We will send you an email with instructions on how to reset your  password.",
+    "instructionMessage": "We will text you a verification code to reset your password. Message and data rates may apply.",
+    "buttonEmail": "Email me",
+    "buttonMessage": "Text me",
+    "last": "I can't remember my email address or phone number."
   }
 }
