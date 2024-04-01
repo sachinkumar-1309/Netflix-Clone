@@ -5,6 +5,7 @@ import Button from "../Button";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import LanguageSelector from "../LanguageSelector";
+import Logo from "../../assets/Logo.png";
 1;
 
 const Auth = () => {
@@ -56,8 +57,10 @@ const Auth = () => {
   return (
     <div style={heroStyles} className="relative h-full">
       <div className="bg-black w-full h-full pb- md:bg-opacity-50">
-        <nav className="relative px-7 ml-24 py-2 w-full">
-          <Link to="/"><img src="src/assets/Logo.png" alt="Logo" className="h-32 " /></Link>
+        <nav className="relative px-7 ml-24 py-2 w-fit">
+          <Link to="/">
+            <img src={Logo} alt="Logo" className="h-32 " />
+          </Link>
         </nav>
         <div className="flex justify-center ">
           <div className=" bg-black bg-opacity-75 px-20 py-12 self-center mt-2 md:w-3/5 lg:max-w-lg w-full">
@@ -110,7 +113,7 @@ const Auth = () => {
               className="bg-gray-400/30 py-3 font-semibold text-white w-full rounded-md hover:bg- mt-5 transition">
               {/* Use a sign-in code */}
               {variant}
-          </button>
+            </button>
 
             <Link to="/loginhelp">
               <p className="mt-3 text-white text-lg mx-auto hover:underline hover:text-gray-400 flex justify-center w-full">
