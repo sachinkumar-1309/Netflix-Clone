@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import React from "react";
 import { MdTranslate } from "react-icons/md";
 import LanguageSelector from "../LanguageSelector";
-import LanguageSelectorContainer from "../LanguageSelectorContainer";
 
 function Footer() {
   const { t } = useTranslation();

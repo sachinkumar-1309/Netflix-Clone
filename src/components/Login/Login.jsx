@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import LanguageSelector from "../LanguageSelector";
 import Logo from "../../assets/Logo.png";
+import { Checkbox } from "@/components/ui/checkbox"
+
 1;
 
 const Auth = () => {
@@ -122,12 +124,8 @@ const Auth = () => {
               </p>
             </Link>
             <div className="flex text-white mt-5 text-xl">
-              <input
-                type="checkbox"
-                className="h-6 w-6 bg-white text-black"
-                name=""
-                id=""
-              />
+              <Checkbox />
+
               <p className="ml-3">
                 {/* Remember me */}
                 {remember}

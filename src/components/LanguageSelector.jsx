@@ -120,7 +120,7 @@ const languages = [
 const LanguageSelector = () => {
   const dispatch = useDispatch();
   const selectedLanguage = useSelector(selectLanguage);
-  const {i18n} = useTranslation();
+  const { i18n } = useTranslation();
 
   const changeLanguage = (e) => {
     dispatch(setLanguage(e.target.value));
