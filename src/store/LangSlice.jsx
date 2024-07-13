@@ -28,11 +28,13 @@ import { createSlice } from '@reduxjs/toolkit';
 export const langSlice = createSlice({
   name: 'language',
   initialState: {
-    selectedLanguage: 'en', // Default language
-  },
+    selectedLanguage: parseInt(localStorage.getItem('lang'))|| '',
+     // Default language
+  },  
   reducers: {
     setLanguage: (state, action) => {
       state.selectedLanguage = action.payload;
+      localStorage.setItem('lang',state.selectedLanguage.toString())
     },
   },
 });

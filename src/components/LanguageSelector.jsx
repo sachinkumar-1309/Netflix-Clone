@@ -121,9 +121,10 @@ const LanguageSelector = () => {
   const dispatch = useDispatch();
   const selectedLanguage = useSelector(selectLanguage);
   const { i18n } = useTranslation();
-
+  
   const changeLanguage = (e) => {
     dispatch(setLanguage(e.target.value));
+    console.log("Selected Language: "+selectedLanguage)
     i18n.changeLanguage(e.target.value);
   };
 
@@ -139,7 +140,7 @@ const LanguageSelector = () => {
         {languages.map((lng) => (
           <option key={lng.code} value={lng.code}>
             {lng.lang}
-          </option>
+          </option> 
         ))}
       </select>
     </div>

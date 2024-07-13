@@ -5,6 +5,6 @@ import Backend from "i18next-http-backend";
 
 i18n.use(languageDetector).use(Backend).use(initReactI18next).init({
   debug: true,
-  lng: "",
+  lng: '',
   returnObjects: true,
 });
